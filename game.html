@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    <link rel='icon' href='./favicon.ico' type='image/x-icon'/ >
+    <script src="./gamedata.js"></script>
+    <title>Quiz Game +</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1>Welcome back to Quiz Game</h1>
+        <br>
+        <p>With the new version of quiz game, we would like to hope that user can enjoy the game better than the previous one.</p>
+        <br>
+        <br>
+        <div class="options" id="options">
+            <button class="btn btn-secondary" onclick="start()">Start the game</button>
+            <a href="./index.html">
+                <button class="btn btn-secondary">Back to Schedule Viewer</button>
+            </a>
+        </div>
+        <div id="game-board" hidden>
+            <h3 id="question"></h3> <br>
+            <button class="btn btn-secondary" id='a' value='a'></button> <br> <br>
+            <button class="btn btn-secondary" id='b' value='b'></button> <br> <br>
+            <button class="btn btn-secondary" id='c' value='c'></button> <br> <br>
+            <button class="btn btn-secondary" id='d' value='d'></button> <br> <br>
+        </div>
+    </div>
+    <script src="./game.js"></script>
+</body>
+</html>
